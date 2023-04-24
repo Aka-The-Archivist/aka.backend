@@ -3,8 +3,8 @@
  * @param req
  * @param res
  */
-export const get = (req, res) => {
+export const post = (req, res) => {
     res.json({
-        message: 'Hello from GET: /hello'
+        message: 'Hello from POST: /hello'
     })
 }

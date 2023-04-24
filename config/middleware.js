@@ -1,6 +1,6 @@
 import {express} from "../providers/express.js";
-import routing from "../providers/routing.js";
 import compression from 'compression';
+import routing from "aka.routing";
 import policy from "./policy.js";
 import helmet from "helmet";
 import cors from "cors";
@@ -37,7 +37,7 @@ export default {
      | middleware function that is used to parse all routes in application.
      |
      */
-    routing: routing(express.Router()),
+    routing: routing(),
 
     /**
      |--------------------------------------------------------------------------
