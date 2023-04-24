@@ -10,7 +10,7 @@ export default {
      | any other location as required by the application or its packages.
      |
      */
-    origin: ['http://127.0.0.1:5000'],
+    origin: ['http://127.0.0.1:3000'],
 
     /**
      |--------------------------------------------------------------------------

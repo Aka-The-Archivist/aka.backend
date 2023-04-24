@@ -43,16 +43,6 @@ export default {
 
     /**
      |--------------------------------------------------------------------------
-     | Routing.js middleware
-     |--------------------------------------------------------------------------
-     |
-     | middleware function that is used to parse all routes in application.
-     |
-     */
-    routing: routing(),
-
-    /**
-     |--------------------------------------------------------------------------
      | cors.js middleware
      |--------------------------------------------------------------------------
      |
@@ -80,6 +70,16 @@ export default {
      | In essence, this middleware compresses the body of HTTP responses before
      | they are sent to the client.
      */
-    compression: compression()
+    compression: compression(),
+
+    /**
+     |--------------------------------------------------------------------------
+     | Routing.js middleware
+     |--------------------------------------------------------------------------
+     | !! todo: load at latest !!
+     | middleware function that is used to parse all routes in application.
+     |
+     */
+    routing: routing(),
 
 }
