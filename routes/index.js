@@ -5,6 +5,7 @@
  */
 export const get = (req, res) => {
     res.json({
-        message: 'Hello from GET: /'
+        method: 'GET',
+        message: 'Start from editing routes/index.js',
     })
 }

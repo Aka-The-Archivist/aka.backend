@@ -8,6 +8,9 @@ dotenv.config();
 // init express application
 const app = express()
 
+// Disable X-Powered-By header
+app.disable('x-powered-by');
+
 // load dynamic middlewares
 Object.keys(middleware).map(index => app.use(middleware[index]))
 

@@ -3,6 +3,7 @@ import compression from 'compression';
 import routing from "aka.routing";
 import policy from "./policy.js";
 import helmet from "helmet";
+import multer from "multer";
 import cors from "cors";
 
 export default {
@@ -28,6 +29,17 @@ export default {
      |
      */
     urlencoded: express.urlencoded({extended: true}),
+
+    /**
+     |--------------------------------------------------------------------------
+     | Express.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | Express.js middleware that manages the upload of files sent via a
+     | multipart/form-data HTTP POST request.
+     |
+     */
+    multer: multer().none(),
 
     /**
      |--------------------------------------------------------------------------
