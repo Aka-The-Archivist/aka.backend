@@ -43,7 +43,7 @@ export default {
 
     /**
      |--------------------------------------------------------------------------
-     | Custom.js middleware
+     | Routing.js middleware
      |--------------------------------------------------------------------------
      |
      | middleware function that is used to parse all routes in application.
