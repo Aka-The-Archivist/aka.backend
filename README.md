@@ -8,7 +8,13 @@ Download project with git pull:
 git clone git@github.com:MwSpaceLLC/aka.backend awesome.backend
 ```
 
-2) Run development server:
+2) Install dependencies:
+
+```bash
+cd awesome.backend && npm install
+```
+
+3) Run development server:
 
 ```bash
 npm run dev
