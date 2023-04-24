@@ -1,5 +1,5 @@
-import {app} from "./providers/express.js";
 import config from "./config/app.js";
+import {app} from "aka.providers";
 
 /*
  |--------------------------------------------------------------------------
