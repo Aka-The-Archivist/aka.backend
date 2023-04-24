@@ -1,3 +1,4 @@
+import errorhandler from "errorhandler";
 import compression from 'compression';
 import routing from "aka.routing";
 import policy from "./policy.js";
@@ -5,8 +6,40 @@ import express from 'express';
 import helmet from "helmet";
 import multer from "multer";
 import cors from "cors";
+import nocache from "nocache";
 
 export default {
+
+    /**
+     |--------------------------------------------------------------------------
+     | helmet.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | security middleware for Express.js that helps protect your web application
+     | from several common attacks.
+     */
+    helmet: helmet(),
+
+    /**
+     |--------------------------------------------------------------------------
+     | cors.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | middleware to allow cross-origin requests from different domains
+     |
+     */
+    cors: cors(policy),
+
+    /**
+     |--------------------------------------------------------------------------
+     | compression.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | Express.js middleware that provides Gzip compression for HTTP responses.
+     | In essence, this middleware compresses the body of HTTP responses before
+     | they are sent to the client.
+     */
+    compression: compression(),
 
     /**
      |--------------------------------------------------------------------------
@@ -43,43 +76,32 @@ export default {
 
     /**
      |--------------------------------------------------------------------------
-     | cors.js middleware
+     | nocache.js middleware
      |--------------------------------------------------------------------------
      |
-     | middleware to allow cross-origin requests from different domains
+     | middleware function that is used to remove cache from routes in application.
      |
      */
-    cors: cors(policy),
-
-    /**
-     |--------------------------------------------------------------------------
-     | helmet.js middleware
-     |--------------------------------------------------------------------------
-     |
-     | security middleware for Express.js that helps protect your web application
-     | from several common attacks.
-     */
-    helmet: helmet(),
-
-    /**
-     |--------------------------------------------------------------------------
-     | compression.js middleware
-     |--------------------------------------------------------------------------
-     |
-     | Express.js middleware that provides Gzip compression for HTTP responses.
-     | In essence, this middleware compresses the body of HTTP responses before
-     | they are sent to the client.
-     */
-    compression: compression(),
+    nocache: nocache(),
 
     /**
      |--------------------------------------------------------------------------
      | Routing.js middleware
      |--------------------------------------------------------------------------
-     | !! todo: load at latest !!
+     |
      | middleware function that is used to parse all routes in application.
      |
      */
     routing: routing(),
+
+    /**
+     |--------------------------------------------------------------------------
+     | Routing.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | Error handling middleware that helps you handle global application errors.
+     |
+     */
+    error: errorhandler(),
 
 }

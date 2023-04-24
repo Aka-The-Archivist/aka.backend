@@ -27,4 +27,18 @@ export default {
 
     port: process.env.APP_PORT || 3000,
 
+
+    /**
+     |--------------------------------------------------------------------------
+     | Application Env
+     |--------------------------------------------------------------------------
+     |
+     | This value is the port of your application. This value is used when the
+     | framework needs to place the application's port in
+     | any other location as required by the application or its packages.
+     |
+     */
+
+    debug: process.env.APP_DEBUG || true,
+
 }
