@@ -2,19 +2,15 @@
 
 #### [Database ORM](https://www.prisma.io/), [Nodemailer](https://nodemailer.com/about/), [Express js](https://expressjs.com/),
 
-Download project with git pull:
+🥳 Start your project:
 
 ```bash
-git clone git@github.com:MwSpaceLLC/aka.backend awesome.backend
+npx aka.create
+# or
+yarn aka.create
 ```
 
-2) Install dependencies:
-
-```bash
-cd awesome.backend && npm install
-```
-
-3) Run development server:
+2) Run development server:
 
 ```bash
 npm run dev
