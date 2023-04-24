@@ -82,7 +82,7 @@ export default {
      | middleware function that is used to remove cache from routes in application.
      |
      */
-    nocache: nocache(),
+    // nocache: nocache(),
 
     /**
      |--------------------------------------------------------------------------
