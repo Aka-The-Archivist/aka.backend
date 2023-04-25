@@ -5,9 +5,10 @@
 🥳 Start your project:
 
 ```bash
-npx aka.create
-# or
-yarn aka.create
+npm init aka-create@latest
+#or
+npx aka-create@latest
+
 ```
 
 2) Run development server:
