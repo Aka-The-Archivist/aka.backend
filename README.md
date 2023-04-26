@@ -8,7 +8,6 @@
 npm init aka-create@latest
 #or
 npx aka-create@latest
-
 ```
 
 2) Run development server:
