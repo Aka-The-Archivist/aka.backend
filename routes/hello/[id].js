@@ -3,9 +3,9 @@
  * @param req
  * @param res
  */
-export const get = (req, res) => {
+export const $get = (req, res) => {
 
-    const {id} = req.params; // get query params
+    const {id} = req.params; // get route params
 
     res.json({
         method: 'GET',

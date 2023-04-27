@@ -3,7 +3,7 @@
  * @param req
  * @param res
  */
-export const post = (req, res) => {
+export const $post = (req, res) => {
 
     const {...data} = req.body; // get post params
 
