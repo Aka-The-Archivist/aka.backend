@@ -10,11 +10,12 @@ export default {
      | by the application or its packages.
      |
      */
-    origin: ['http://127.0.0.1:3000'],
+    resave: false, // don't save session if unmodified
+
 
     /**
      |--------------------------------------------------------------------------
-     | Application Methods
+     | Application saveUninitialized
      |--------------------------------------------------------------------------
      |
      | This value is part of your application. This value is used when the framework
@@ -22,11 +23,12 @@ export default {
      | by the application or its packages.
      |
      */
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS', 'PATCH'],
+    saveUninitialized: false, // don't create session until something stored
+
 
     /**
      |--------------------------------------------------------------------------
-     | Application allowed Headers
+     | Application origin
      |--------------------------------------------------------------------------
      |
      | This value is part of your application. This value is used when the framework
@@ -34,6 +36,5 @@ export default {
      | by the application or its packages.
      |
      */
-    allowedHeaders: ['Content-Type']
-
+    secret: process.env.APP_KEY || 'my-very-secret'
 }
