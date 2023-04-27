@@ -3,7 +3,7 @@ import config from "./config/app.js";
 
 /*
  |--------------------------------------------------------------------------
- | Start Express.js application
+ | Start [aka.backend] application
  |--------------------------------------------------------------------------
  */
 app.listen(config.port, () => {
