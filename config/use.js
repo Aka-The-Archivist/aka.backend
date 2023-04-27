@@ -6,14 +6,12 @@ import helmet from "helmet";
 import multer from "multer";
 
 import cors from "cors";
-import policy from "../config/policy.js";
+import policy from "./policy.js";
 
 /** @optional middlewares */
 import nocache from "nocache";
 import expressSession from "express-session";
-import session from "../config/session.js";
-
-import example from "./example.js";
+import session from "./session.js";
 
 export default [
 
@@ -101,16 +99,6 @@ export default [
      | they are sent to the client.
      */
     compression(),
-
-    /** @optional
-     |--------------------------------------------------------------------------
-     | custom.js middleware
-     |--------------------------------------------------------------------------
-     |
-     | put any custom middleware that helps you handle global application request.
-     |
-     */
-    // ,
 
     /**
      |--------------------------------------------------------------------------

@@ -1,5 +1,5 @@
+import {app} from "aka.providers"; // must init before all
 import config from "./config/app.js";
-import {app} from "aka.providers";
 
 /*
  |--------------------------------------------------------------------------
