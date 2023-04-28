@@ -3,6 +3,7 @@
   "hardReloadOnChange": false,
   "view": "browser",
   "template": "node",
+  "port": 3000,
   "container": {
     "port": 3000,
     "node": "16"
