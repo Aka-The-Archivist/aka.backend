@@ -5,7 +5,10 @@
  */
 export default function get(req, res) {
     res.json({
-        method: 'GET',
-        message: 'Start from editing routes/index.js',
-    })
+        message: "codesandbox:aka.backend | jsonwebtoken",
+        usage: [
+            "generate token: POST => /auth | {...data}",
+            "protected page: GET  => /user | {middleware:check}",
+        ],
+    });
 }
