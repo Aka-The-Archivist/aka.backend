@@ -1,5 +1,5 @@
 export default {
-  /**
+    /**
      |--------------------------------------------------------------------------
      | Application origin
      |--------------------------------------------------------------------------
@@ -9,9 +9,9 @@ export default {
      | by the application or its packages.
      |
      */
-  origin: ["http://127.0.0.1:3000"],
+    origin: ["http://127.0.0.1:3000"],
 
-  /**
+    /**
      |--------------------------------------------------------------------------
      | Application Methods
      |--------------------------------------------------------------------------
@@ -21,9 +21,9 @@ export default {
      | by the application or its packages.
      |
      */
-  methods: ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS", "PATCH"],
+    methods: ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS", "PATCH"],
 
-  /**
+    /**
      |--------------------------------------------------------------------------
      | Application allowed Headers
      |--------------------------------------------------------------------------
@@ -33,5 +33,5 @@ export default {
      | by the application or its packages.
      |
      */
-  allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Content-Type"],
 };
