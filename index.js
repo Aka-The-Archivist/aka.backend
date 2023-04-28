@@ -8,6 +8,6 @@ import config from "./config/app.js";
  */
 app.listen(config.port, () => {
   console.log(
-    `${config.name} backend listening on port http://localhost:${config.port}`
+    `${config.name} backend listening on port http://127.0.0.1:${config.port}`
   );
 });

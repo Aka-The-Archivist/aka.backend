@@ -6,7 +6,8 @@
   "author": "MwSpace llc",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "nodemon index.js localhost 8080"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "aka.providers": "^1.0.6",
