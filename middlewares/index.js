@@ -11,6 +11,6 @@
  |
  */
 export default (req, res, next) => {
-    console.log(`${req.method} ${req.url} from /middlewares/index.js`);
+    console.log(`${req.method} ${req.originalUrl} from middlewares/index.js`);
     next();
 }
