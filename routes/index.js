@@ -5,7 +5,13 @@
  */
 export default function get(req, res) {
     res.json({
-        method: 'GET',
-        message: 'Start from editing routes/index.js',
-    })
+        message: "codesandbox:aka.backend | prismajs",
+        usage: [
+            "all    user: GET     => /users",
+            "make   user: POST    => /users/create | {...data}",
+            "read   user: GET     => /users/[id] | {...params}",
+            "update user: PATCH   => /users/[id]/update | {...params,...data}",
+            "remove user: DELETE  => /users/[id]/delete | {...params,...data}",
+        ],
+    });
 }

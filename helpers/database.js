@@ -1,0 +1,14 @@
+import {PrismaClient} from "@prisma/client"
+
+const env = process.env.NODE_ENV || 'development';
+
+export let prisma = global.prisma || new PrismaClient(env !== '' ? {
+    log: [
+        'query',
+        // 'info',
+        'warn',
+        'error'
+    ],
+} : {})
+
+if (env !== 'production') global.prisma = prisma
