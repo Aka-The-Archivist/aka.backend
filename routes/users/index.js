@@ -5,7 +5,7 @@
  */
 export default function get(req, res) {
     res.json({
-        method: "GET",
+        method: req.method,
         user: req.user,
     });
 }
