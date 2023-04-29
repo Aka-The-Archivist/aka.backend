@@ -1,5 +1,3 @@
-import database from "../helpers/database.js";
-
 /** @middleware
  |--------------------------------------------------------------------------
  | custom.js middleware

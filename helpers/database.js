@@ -1,16 +1,27 @@
 import {MongoClient} from "mongodb";
 
+/**
+ *
+ * @type {*|string}
+ */
 const connectionString = process.env.ATLAS_URI || "";
 
+/**
+ *
+ * @type {MongoClient}
+ */
 const client = new MongoClient(connectionString);
 
-let conn;
-try {
-    conn = await client.connect();
-} catch (e) {
-    console.error(e);
-}
+/**
+ *
+ * @type {MongoClient}
+ */
+const conn = await client.connect();
 
-let database = conn.db();
+/**
+ *
+ * @type {Db}
+ */
+const database = conn.db();
 
 export default database;
