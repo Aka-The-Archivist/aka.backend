@@ -1,3 +1,5 @@
+import database from "../helpers/database.js";
+
 /** @middleware
  |--------------------------------------------------------------------------
  | custom.js middleware
@@ -10,7 +12,10 @@
  | request-response cycle, or call the next middleware function in the stack.
  |
  */
-export default (req, res, next) => {
-    console.log(`${req.method} ${req.originalUrl} from middlewares/index.js`);
+export default ['/users', async (req, res, next) => {
+
+    // inject collection in request
+    req.collection = await database.collection("users");
+
     next();
-}
+}]

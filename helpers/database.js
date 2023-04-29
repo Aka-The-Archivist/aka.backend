@@ -1,16 +1,16 @@
-import { MongoClient } from "mongodb";
+import {MongoClient} from "mongodb";
 
-const connectionString = process.env.DATABASE_URL || "";
+const connectionString = process.env.ATLAS_URI || "";
 
 const client = new MongoClient(connectionString);
 
 let conn;
 try {
     conn = await client.connect();
-} catch(e) {
+} catch (e) {
     console.error(e);
 }
 
-const database = conn.db("sample_training");
+let database = conn.db();
 
 export default database;
