@@ -1,12 +1,13 @@
+import rateLimit from "express-rate-limit";
 import errorhandler from "errorhandler";
 import compression from 'compression';
+import limiter from "./limiter.js";
 import routing from "aka.routing";
+import policy from "./policy.js";
 import express from 'express';
 import helmet from "helmet";
 import multer from "multer";
-
 import cors from "cors";
-import policy from "./policy.js";
 
 /** @optional middlewares */
 // import nocache from "nocache";
@@ -14,6 +15,16 @@ import policy from "./policy.js";
 // import session from "./session.js";
 
 export default [
+
+    /** @optional
+     |--------------------------------------------------------------------------
+     | limiter.js middleware
+     |--------------------------------------------------------------------------
+     |
+     | middleware that manages the request limit time management
+     |
+     */
+    rateLimit(limiter),
 
     /** @optional
      |--------------------------------------------------------------------------
