@@ -5,7 +5,10 @@
  */
 export default function get(req, res) {
     res.json({
-        method: req.method,
-        message: 'Start from editing routes/index.js',
-    })
+        message: "codesandbox:aka.backend | emails",
+        usage: [
+            "async   mail: POST    => /email/node | {...data}",
+            "await   mail: POST    => /email/sendgrid | {...data}",
+        ],
+    });
 }
