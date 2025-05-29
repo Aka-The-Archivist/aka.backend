@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "aka.backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Api backend framework",
   "author": "MwSpace llc",
   "license": "Apache-2.0",
@@ -19,11 +19,11 @@
     "express-session": "^1.17.3",
     "express-validator": "^7.0.1",
     "helmet": "^6.1.5",
-    "multer": "^1.4.5-lts.1",
+    "multer": "^2.0.0",
     "nocache": "^3.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.1.10",
     "prisma": "^4.13.0"
   }
 }
