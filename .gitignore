@@ -11,3 +11,5 @@ node_modules
 
 # loader not included
 package-lock.json
+
+version.bat
