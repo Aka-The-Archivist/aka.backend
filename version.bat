@@ -35,7 +35,7 @@ powershell -Command "(Get-Content package.json) -replace '\"version\": \".*\"', 
 REM Esegui i comandi git
 git add .
 git commit -m "update !new_version!"
-git push origin main
+git push origin HEAD
 
 REM Crea e pusha il tag
 git tag !new_version!
