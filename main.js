@@ -7,8 +7,8 @@ import config from "./config/app.js";
  |--------------------------------------------------------------------------
  */
 app.listen(config.port, () => {
-    console.log(`${config.name} backend listening on local port http://${ip.local}:${config.port}`)
-    console.log(`${config.name} backend listening on network port http://${ip.network}:${config.port}`)
+    console.log(`🖥️ ${config.name} backend listening on http://127.0.0.1:${config.port}`)
+    console.log(`🌐 ${config.name} backend listening on http://${ip.local}:${config.port}`)
 })
 
 /*
@@ -17,5 +17,5 @@ app.listen(config.port, () => {
  |--------------------------------------------------------------------------
  */
 process.on('uncaughtException', (err) => {
-    console.log(`${config.name} exception: `, err);
+    console.log(`❌ ${config.name} exception: `, err);
 });
