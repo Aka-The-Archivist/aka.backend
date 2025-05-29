@@ -35,11 +35,15 @@ powershell -Command "(Get-Content package.json) -replace '\"version\": \".*\"', 
 REM Esegui i comandi git
 git add .
 git commit -m "update !new_version!"
-git push origin main
+git push origin HEAD
 
 REM Crea e pusha il tag
 git tag !new_version!
 git push origin !new_version!
 
-echo Versione aggiornata a !new_version!, push completato.
+REM Pubblica su npm
+echo Pubblicazione su npm...
+npm publish
+
+echo Versione aggiornata a !new_version!, push completato e pacchetto pubblicato su npm.
 pause
