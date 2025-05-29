@@ -10,9 +10,9 @@
     "dev": "nodemon main.js"
   },
   "dependencies": {
-    "aka.emails": "^1.0.10",
-    "aka.providers": "^1.0.11",
-    "aka.routing": "^1.0.18",
+    "aka.emails": "^1.1.0",
+    "aka.providers": "^1.1.1",
+    "aka.routing": "^1.1.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "errorhandler": "^1.5.1",
@@ -24,6 +24,6 @@
     "nocache": "^3.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.1.10"
   }
 }
