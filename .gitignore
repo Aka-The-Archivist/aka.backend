@@ -10,3 +10,5 @@ node_modules
 # loader not included
 package-lock.json
 yarn.lock
+
+version.bat
