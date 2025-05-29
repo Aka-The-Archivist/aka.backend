@@ -41,5 +41,5 @@ REM Crea e pusha il tag
 git tag !new_version!
 git push origin !new_version!
 
-echo Versione aggiornata a !new_version!, push completato e pacchetto pubblicato su npm.
+echo Versione aggiornata a !new_version!, push completato.
 pause
